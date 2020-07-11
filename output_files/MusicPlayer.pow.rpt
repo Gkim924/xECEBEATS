@@ -1,0 +1,396 @@
+Power Analyzer report for MusicPlayer
+Sat Dec 07 10:53:17 2019
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Parallel Compilation
+  3. Power Analyzer Summary
+  4. Power Analyzer Settings
+  5. Indeterminate Toggle Rates
+  6. Operating Conditions Used
+  7. Thermal Power Dissipation by Block
+  8. Thermal Power Dissipation by Block Type
+  9. Thermal Power Dissipation by Hierarchy
+ 10. Core Dynamic Thermal Power Dissipation by Clock Domain
+ 11. Current Drawn from Voltage Supplies Summary
+ 12. VCCIO Supply Current Drawn by I/O Bank
+ 13. VCCIO Supply Current Drawn by Voltage
+ 14. Confidence Metric Details
+ 15. Signal Activities
+ 16. Power Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.05        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   5.5%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------+
+; Power Analyzer Summary                                                                    ;
++----------------------------------------+--------------------------------------------------+
+; Power Analyzer Status                  ; Successful - Sat Dec 07 10:53:17 2019            ;
+; Quartus Prime Version                  ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition      ;
+; Revision Name                          ; MusicPlayer                                      ;
+; Top-level Entity Name                  ; toplevel                                         ;
+; Family                                 ; Cyclone IV E                                     ;
+; Device                                 ; EP4CE115F29C7                                    ;
+; Power Models                           ; Final                                            ;
+; Total Thermal Power Dissipation        ; 347.94 mW                                        ;
+; Core Dynamic Thermal Power Dissipation ; 123.63 mW                                        ;
+; Core Static Thermal Power Dissipation  ; 105.54 mW                                        ;
+; I/O Thermal Power Dissipation          ; 118.78 mW                                        ;
+; Power Estimation Confidence            ; Low: user provided insufficient toggle rate data ;
++----------------------------------------+--------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Power Analyzer Settings                                                                                                  ;
++------------------------------------------------------------------+---------------------------------------+---------------+
+; Option                                                           ; Setting                               ; Default Value ;
++------------------------------------------------------------------+---------------------------------------+---------------+
+; Use smart compilation                                            ; Off                                   ; Off           ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                                    ; On            ;
+; Enable compact report table                                      ; Off                                   ; Off           ;
+; Default Power Input I/O Toggle Rate                              ; 12.5%                                 ; 12.5%         ;
+; Preset Cooling Solution                                          ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ;               ;
+; Board thermal model                                              ; None (CONSERVATIVE)                   ;               ;
+; Default Power Toggle Rate                                        ; 12.5%                                 ; 12.5%         ;
+; Use vectorless estimation                                        ; On                                    ; On            ;
+; Use Input Files                                                  ; Off                                   ; Off           ;
+; Filter Glitches in VCD File Reader                               ; On                                    ; On            ;
+; Power Analyzer Report Signal Activity                            ; Off                                   ; Off           ;
+; Power Analyzer Report Power Dissipation                          ; Off                                   ; Off           ;
+; Device Power Characteristics                                     ; TYPICAL                               ; TYPICAL       ;
+; Automatically Compute Junction Temperature                       ; On                                    ; On            ;
+; Specified Junction Temperature                                   ; 25                                    ; 25            ;
+; Ambient Temperature                                              ; 25                                    ; 25            ;
+; Use Custom Cooling Solution                                      ; Off                                   ; Off           ;
+; Board Temperature                                                ; 25                                    ; 25            ;
++------------------------------------------------------------------+---------------------------------------+---------------+
+
+
++-------------------------------------------+
+; Indeterminate Toggle Rates                ;
++-------------+-----------------------------+
+; Node        ; Reason                      ;
++-------------+-----------------------------+
+; KEY[2]      ; No valid clock domain found ;
+; KEY[3]      ; No valid clock domain found ;
+; AUD_ADCDAT  ; No valid clock domain found ;
+; AUD_ADCLRCK ; No valid clock domain found ;
++-------------+-----------------------------+
+
+
++-------------------------------------------------------------------------+
+; Operating Conditions Used                                               ;
++---------------------------------------------+---------------------------+
+; Setting                                     ; Value                     ;
++---------------------------------------------+---------------------------+
+; Device power characteristics                ; Typical                   ;
+;                                             ;                           ;
+; Voltages                                    ;                           ;
+;     VCCINT                                  ; 1.20 V                    ;
+;     VCCA                                    ; 2.50 V                    ;
+;     VCCD                                    ; 1.20 V                    ;
+;     3.3-V LVTTL I/O Standard                ; 3.3 V                     ;
+;     2.5 V I/O Standard                      ; 2.5 V                     ;
+;                                             ;                           ;
+; Auto computed junction temperature          ; 27.3 degrees Celsius      ;
+;     Ambient temperature                     ; 25.0 degrees Celsius      ;
+;     Junction-to-Case thermal resistance     ; 3.90 degrees Celsius/Watt ;
+;     Case-to-Heat Sink thermal resistance    ; 0.10 degrees Celsius/Watt ;
+;     Heat Sink-to-Ambient thermal resistance ; 2.50 degrees Celsius/Watt ;
+;                                             ;                           ;
+; Board model used                            ; None                      ;
++---------------------------------------------+---------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Block                                                                                                           ;
++------------+------------+---------------------+-----------------------------+--------------------------------+-------------------------------+
+; Block Name ; Block Type ; Total Thermal Power ; Block Thermal Dynamic Power ; Block Thermal Static Power (1) ; Routing Thermal Dynamic Power ;
++------------+------------+---------------------+-----------------------------+--------------------------------+-------------------------------+
+(1) The "Thermal Power Dissipation by Block" Table has been hidden. To show this table, please select the "Write power dissipation by block to report file" option under "PowerPlay Power Analyzer Settings".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Block Type                                                                                                                                                                                   ;
++----------------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+; Block Type                 ; Total Thermal Power by Block Type ; Block Thermal Dynamic Power ; Block Thermal Static Power (1) ; Routing Thermal Dynamic Power ; Block Average Toggle Rate (millions of transitions / sec) ;
++----------------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+; PLL                        ; 1.45 mW                           ; 1.45 mW                     ; --                             ; 0.00 mW                       ;    3.125                                                  ;
+; M9K                        ; 5.06 mW                           ; 5.04 mW                     ; --                             ; 0.03 mW                       ;    3.125                                                  ;
+; Embedded multiplier block  ; 0.09 mW                           ; 0.09 mW                     ; --                             ; 0.00 mW                       ;    1.590                                                  ;
+; Embedded multiplier output ; 0.01 mW                           ; 0.00 mW                     ; --                             ; 0.01 mW                       ;    2.201                                                  ;
+; Combinational cell         ; 70.20 mW                          ; 44.92 mW                    ; --                             ; 25.29 mW                      ;    2.831                                                  ;
+; Clock control block        ; 13.36 mW                          ; 0.00 mW                     ; --                             ; 13.36 mW                      ;   34.888                                                  ;
+; Register cell              ; 33.11 mW                          ; 2.21 mW                     ; --                             ; 30.91 mW                      ;    6.232                                                  ;
+; I/O                        ; 83.12 mW                          ; 21.30 mW                    ; 61.48 mW                       ; 0.34 mW                       ;   10.038                                                  ;
++----------------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+(1) The "Block Thermal Static Power" for all block types except Pins and the Voltage Regulator, if one exists, is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Hierarchy                                                                                                                                                                                                                                                                                                  ;
++-----------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
+; Compilation Hierarchy Node                          ; Total Thermal Power by Hierarchy (1) ; Block Thermal Dynamic Power (1) ; Block Thermal Static Power (1)(2) ; Routing Thermal Dynamic Power (1) ; Full Hierarchy Name                                                                                                              ;
++-----------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
+; |toplevel                                           ; 206.41 mW (124.73 mW)                ; 74.99 mW (22.22 mW)             ; 61.48 mW (61.48 mW)               ; 69.94 mW (41.03 mW)               ; |toplevel                                                                                                                        ;
+;     |RAM:Graphics                                   ; 71.69 mW (66.62 mW)                  ; 49.65 mW (44.62 mW)             ; --                                ; 22.03 mW (22.01 mW)               ; |toplevel|RAM:Graphics                                                                                                           ;
+;         |altsyncram:Speedmem_rtl_0                  ; 5.06 mW (0.00 mW)                    ; 5.04 mW (0.00 mW)               ; --                                ; 0.03 mW (0.00 mW)                 ; |toplevel|RAM:Graphics|altsyncram:Speedmem_rtl_0                                                                                 ;
+;             |altsyncram_qp61:auto_generated         ; 5.06 mW (5.06 mW)                    ; 5.04 mW (5.04 mW)               ; --                                ; 0.03 mW (0.03 mW)                 ; |toplevel|RAM:Graphics|altsyncram:Speedmem_rtl_0|altsyncram_qp61:auto_generated                                                  ;
+;     |IR_RECEIVE:IR                                  ; 0.63 mW (0.63 mW)                    ; 0.45 mW (0.45 mW)               ; --                                ; 0.18 mW (0.18 mW)                 ; |toplevel|IR_RECEIVE:IR                                                                                                          ;
+;     |lpm_mult:Mult0                                 ; 0.09 mW (0.00 mW)                    ; 0.09 mW (0.00 mW)               ; --                                ; 0.01 mW (0.00 mW)                 ; |toplevel|lpm_mult:Mult0                                                                                                         ;
+;         |mult_gft:auto_generated                    ; 0.09 mW (0.09 mW)                    ; 0.09 mW (0.09 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |toplevel|lpm_mult:Mult0|mult_gft:auto_generated                                                                                 ;
+;     |lpm_mult:Mult1                                 ; 0.07 mW (0.00 mW)                    ; 0.04 mW (0.00 mW)               ; --                                ; 0.03 mW (0.00 mW)                 ; |toplevel|lpm_mult:Mult1                                                                                                         ;
+;         |multcore:mult_core                         ; 0.07 mW (0.05 mW)                    ; 0.04 mW (0.03 mW)               ; --                                ; 0.03 mW (0.02 mW)                 ; |toplevel|lpm_mult:Mult1|multcore:mult_core                                                                                      ;
+;             |mpar_add:padder                        ; 0.03 mW (0.00 mW)                    ; 0.01 mW (0.00 mW)               ; --                                ; 0.01 mW (0.00 mW)                 ; |toplevel|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder                                                                      ;
+;                 |lpm_add_sub:adder[0]               ; 0.02 mW (0.00 mW)                    ; 0.01 mW (0.00 mW)               ; --                                ; 0.01 mW (0.00 mW)                 ; |toplevel|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                                                 ;
+;                     |add_sub_mgh:auto_generated     ; 0.02 mW (0.02 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |toplevel|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_mgh:auto_generated                      ;
+;                 |lpm_add_sub:adder[1]               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |toplevel|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]                                                 ;
+;                 |mpar_add:sub_par_add               ; 0.01 mW (0.00 mW)                    ; 0.01 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |toplevel|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add                                                 ;
+;                     |lpm_add_sub:adder[0]           ; 0.01 mW (0.00 mW)                    ; 0.01 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |toplevel|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]                            ;
+;                         |add_sub_qgh:auto_generated ; 0.01 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |toplevel|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_qgh:auto_generated ;
+;     |lpm_mult:Mult2                                 ; 0.04 mW (0.00 mW)                    ; 0.03 mW (0.00 mW)               ; --                                ; 0.01 mW (0.00 mW)                 ; |toplevel|lpm_mult:Mult2                                                                                                         ;
+;         |multcore:mult_core                         ; 0.04 mW (0.02 mW)                    ; 0.03 mW (0.01 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |toplevel|lpm_mult:Mult2|multcore:mult_core                                                                                      ;
+;             |mpar_add:padder                        ; 0.02 mW (0.00 mW)                    ; 0.01 mW (0.00 mW)               ; --                                ; 0.01 mW (0.00 mW)                 ; |toplevel|lpm_mult:Mult2|multcore:mult_core|mpar_add:padder                                                                      ;
+;                 |lpm_add_sub:adder[0]               ; 0.01 mW (0.00 mW)                    ; 0.01 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |toplevel|lpm_mult:Mult2|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                                                 ;
+;                     |add_sub_jgh:auto_generated     ; 0.01 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |toplevel|lpm_mult:Mult2|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_jgh:auto_generated                      ;
+;                 |mpar_add:sub_par_add               ; 0.01 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |toplevel|lpm_mult:Mult2|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add                                                 ;
+;                     |lpm_add_sub:adder[0]           ; 0.01 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |toplevel|lpm_mult:Mult2|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]                            ;
+;                         |add_sub_ngh:auto_generated ; 0.01 mW (0.01 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |toplevel|lpm_mult:Mult2|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_ngh:auto_generated ;
+;     |ControlUnit:MusicControlUnit                   ; 3.72 mW (0.15 mW)                    ; 0.51 mW (0.02 mW)               ; --                                ; 3.21 mW (0.14 mW)                 ; |toplevel|ControlUnit:MusicControlUnit                                                                                           ;
+;         |audio_interface:audioInterface_instance    ; 0.49 mW (0.49 mW)                    ; 0.29 mW (0.29 mW)               ; --                                ; 0.20 mW (0.20 mW)                 ; |toplevel|ControlUnit:MusicControlUnit|audio_interface:audioInterface_instance                                                   ;
+;         |memreader:flash                            ; 3.08 mW (3.08 mW)                    ; 0.21 mW (0.21 mW)               ; --                                ; 2.87 mW (2.87 mW)                 ; |toplevel|ControlUnit:MusicControlUnit|memreader:flash                                                                           ;
+;     |hard_block:auto_generated_inst                 ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |toplevel|hard_block:auto_generated_inst                                                                                         ;
+;     |sync:button_sync[0]                            ; 0.03 mW (0.03 mW)                    ; 0.02 mW (0.02 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |toplevel|sync:button_sync[0]                                                                                                    ;
+;     |sync:button_sync[1]                            ; 0.03 mW (0.03 mW)                    ; 0.03 mW (0.03 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |toplevel|sync:button_sync[1]                                                                                                    ;
+;     |color_mapper:color_instance                    ; 3.24 mW (3.24 mW)                    ; 0.39 mW (0.39 mW)               ; --                                ; 2.85 mW (2.85 mW)                 ; |toplevel|color_mapper:color_instance                                                                                            ;
+;     |HexDriver:hex0                                 ; 0.04 mW (0.04 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.03 mW (0.03 mW)                 ; |toplevel|HexDriver:hex0                                                                                                         ;
+;     |HexDriver:hex1                                 ; 0.02 mW (0.02 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |toplevel|HexDriver:hex1                                                                                                         ;
+;     |HexDriver:hex2                                 ; 0.01 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |toplevel|HexDriver:hex2                                                                                                         ;
+;     |HexDriver:hex3                                 ; 0.02 mW (0.02 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |toplevel|HexDriver:hex3                                                                                                         ;
+;     |HexDriver:hex4                                 ; 0.03 mW (0.03 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.02 mW (0.02 mW)                 ; |toplevel|HexDriver:hex4                                                                                                         ;
+;     |HexDriver:hex5                                 ; 0.03 mW (0.03 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.02 mW (0.02 mW)                 ; |toplevel|HexDriver:hex5                                                                                                         ;
+;     |vga_clk:vga_clk_instance                       ; 1.65 mW (0.00 mW)                    ; 1.45 mW (0.00 mW)               ; --                                ; 0.20 mW (0.00 mW)                 ; |toplevel|vga_clk:vga_clk_instance                                                                                               ;
+;         |altpll:altpll_component                    ; 1.65 mW (0.00 mW)                    ; 1.45 mW (0.00 mW)               ; --                                ; 0.20 mW (0.00 mW)                 ; |toplevel|vga_clk:vga_clk_instance|altpll:altpll_component                                                                       ;
+;             |vga_clk_altpll:auto_generated          ; 1.65 mW (1.65 mW)                    ; 1.45 mW (1.45 mW)               ; --                                ; 0.20 mW (0.20 mW)                 ; |toplevel|vga_clk:vga_clk_instance|altpll:altpll_component|vga_clk_altpll:auto_generated                                         ;
+;     |VGA_controller:vga_controller_instance         ; 0.35 mW (0.35 mW)                    ; 0.07 mW (0.07 mW)               ; --                                ; 0.29 mW (0.29 mW)                 ; |toplevel|VGA_controller:vga_controller_instance                                                                                 ;
++-----------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
+(1) Value in parentheses is the power consumed at that level of hierarchy. Value not in parentheses is the power consumed at that level of hierarchy plus the power consumed by all levels of hierarchy below it.
+
+(2) The "Block Thermal Static Power" for all levels of hierarchy except the top-level hierarchy is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++--------------------------------------------------------------------+
+; Core Dynamic Thermal Power Dissipation by Clock Domain             ;
++-----------------+-----------------------+--------------------------+
+; Clock Domain    ; Clock Frequency (MHz) ; Total Core Dynamic Power ;
++-----------------+-----------------------+--------------------------+
+; CLOCK           ; 50.00                 ; 123.54                   ;
+; No clock domain ; 0.00                  ; 0.09                     ;
++-----------------+-----------------------+--------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Current Drawn from Voltage Supplies Summary                                                                                        ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; Voltage Supply ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCCINT         ; 158.57 mA               ; 103.56 mA                 ; 55.01 mA                 ; 158.57 mA                        ;
+; VCCIO          ; 20.14 mA                ; 6.05 mA                   ; 14.08 mA                 ; 20.14 mA                         ;
+; VCCA           ; 35.87 mA                ; 0.27 mA                   ; 35.60 mA                 ; 35.87 mA                         ;
+; VCCD           ; 5.06 mA                 ; 0.64 mA                   ; 4.43 mA                  ; 5.06 mA                          ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" are sufficient for power-up, configuration, and user operation of the device.
+
+
++-----------------------------------------------------------------------------------------------+
+; VCCIO Supply Current Drawn by I/O Bank                                                        ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; I/O Bank ; VCCIO Voltage ; Total Current Drawn ; Dynamic Current Drawn ; Static Current Drawn ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; 1        ; 3.3V          ; 1.72 mA             ; 0.04 mA               ; 1.67 mA              ;
+; 2        ; 3.3V          ; 1.59 mA             ; 0.08 mA               ; 1.52 mA              ;
+; 3        ; 3.3V          ; 2.81 mA             ; 0.67 mA               ; 2.14 mA              ;
+; 4        ; 3.3V          ; 2.21 mA             ; 0.16 mA               ; 2.05 mA              ;
+; 5        ; 2.5V          ; 1.66 mA             ; 0.10 mA               ; 1.56 mA              ;
+; 6        ; 2.5V          ; 1.57 mA             ; 0.03 mA               ; 1.53 mA              ;
+; 7        ; 2.5V          ; 1.78 mA             ; 0.20 mA               ; 1.58 mA              ;
+; 8        ; 3.3V          ; 6.80 mA             ; 4.77 mA               ; 2.02 mA              ;
++----------+---------------+---------------------+-----------------------+----------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; VCCIO Supply Current Drawn by Voltage                                                                                             ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCCIO Voltage ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; 2.5V          ; 5.01 mA                 ; 0.33 mA                   ; 4.68 mA                  ; 5.01 mA                          ;
+; 3.3V          ; 15.13 mA                ; 5.72 mA                   ; 9.40 mA                  ; 15.13 mA                         ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" are sufficient for power-up, configuration, and user operation of the device.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Confidence Metric Details                                                                                                                             ;
++----------------------------------------------------------------------------------------+----------------+-------------+--------------+----------------+
+; Data Source                                                                            ; Total          ; Pin         ; Registered   ; Combinational  ;
++----------------------------------------------------------------------------------------+----------------+-------------+--------------+----------------+
+; Simulation (from file)                                                                 ;                ;             ;              ;                ;
+;     -- Number of signals with Toggle Rate from Simulation                              ; 0 (0.0%)       ; 0 (0.0%)    ; 0 (0.0%)     ; 0 (0.0%)       ;
+;     -- Number of signals with Static Probability from Simulation                       ; 0 (0.0%)       ; 0 (0.0%)    ; 0 (0.0%)     ; 0 (0.0%)       ;
+;                                                                                        ;                ;             ;              ;                ;
+; Node, entity or clock assignment                                                       ;                ;             ;              ;                ;
+;     -- Number of signals with Toggle Rate from Node, entity or clock assignment        ; 1 (0.0%)       ; 1 (0.6%)    ; 0 (0.0%)     ; 0 (0.0%)       ;
+;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 1 (0.0%)       ; 1 (0.6%)    ; 0 (0.0%)     ; 0 (0.0%)       ;
+;                                                                                        ;                ;             ;              ;                ;
+; Vectorless estimation                                                                  ;                ;             ;              ;                ;
+;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 41999 (100.0%) ; 137 (87.3%) ; 353 (100.0%) ; 41509 (100.0%) ;
+;     -- Number of signals with Zero toggle rate, from Vectorless estimation             ; 74 (0.2%)      ; 31 (19.7%)  ; 0 (0.0%)     ; 43 (0.1%)      ;
+;     -- Number of signals with Static Probability from Vectorless estimation            ; 41999 (100.0%) ; 137 (87.3%) ; 353 (100.0%) ; 41509 (100.0%) ;
+;                                                                                        ;                ;             ;              ;                ;
+; Default assignment                                                                     ;                ;             ;              ;                ;
+;     -- Number of signals with Toggle Rate from Default assignment                      ; 13 (0.0%)      ; 12 (7.6%)   ; 0 (0.0%)     ; 1 (0.0%)       ;
+;     -- Number of signals with Static Probability from Default assignment               ; 20 (0.0%)      ; 19 (12.1%)  ; 0 (0.0%)     ; 1 (0.0%)       ;
+;                                                                                        ;                ;             ;              ;                ;
+; Assumed 0                                                                              ;                ;             ;              ;                ;
+;     -- Number of signals with Toggle Rate assumed 0                                    ; 7 (0.0%)       ; 7 (4.5%)    ; 0 (0.0%)     ; 0 (0.0%)       ;
++----------------------------------------------------------------------------------------+----------------+-------------+--------------+----------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Activities                                                                                                                           ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+; Signal ; Type ; Toggle Rate (millions of transitions / sec) ; Toggle Rate Data Source ; Static Probability ; Static Probability Data Source ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+(1) The "Signal Activity" Table has been hidden. To show this table, please select the "Write signal activities to report file" option under "PowerPlay Power Analyzer Settings".
+
+
++-------------------------+
+; Power Analyzer Messages ;
++-------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Power Analyzer
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+    Info: Processing started: Sat Dec 07 10:52:43 2019
+Info: Command: quartus_pow --read_settings_files=off --write_settings_files=off MusicPlayer -c MusicPlayer
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (332104): Reading SDC File: 'TimeConstraint.sdc'
+Warning (332174): Ignored filter at TimeConstraint.sdc(42): altera_reserved_tck could not be matched with a port File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 42
+Warning (332049): Ignored create_clock at TimeConstraint.sdc(42): Argument <targets> is an empty collection File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 42
+    Info (332050): create_clock -name {altera_reserved_tck} -period 100.000 -waveform { 0.000 50.000 } [get_ports {altera_reserved_tck}] File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 42
+Warning (332049): Ignored set_input_delay at TimeConstraint.sdc(76): Argument <targets> is an empty collection File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 76
+    Info (332050): set_input_delay -add_delay -max -clock [get_clocks {main_clk_50}]  3.000 [get_ports {altera_reserved_tck}] File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 76
+Warning (332049): Ignored set_input_delay at TimeConstraint.sdc(77): Argument <targets> is an empty collection File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 77
+    Info (332050): set_input_delay -add_delay -min -clock [get_clocks {main_clk_50}]  2.000 [get_ports {altera_reserved_tck}] File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 77
+Warning (332174): Ignored filter at TimeConstraint.sdc(78): altera_reserved_tdi could not be matched with a port File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 78
+Warning (332049): Ignored set_input_delay at TimeConstraint.sdc(78): Argument <targets> is an empty collection File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 78
+    Info (332050): set_input_delay -add_delay -max -clock [get_clocks {main_clk_50}]  3.000 [get_ports {altera_reserved_tdi}] File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 78
+Warning (332049): Ignored set_input_delay at TimeConstraint.sdc(79): Argument <targets> is an empty collection File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 79
+    Info (332050): set_input_delay -add_delay -min -clock [get_clocks {main_clk_50}]  2.000 [get_ports {altera_reserved_tdi}] File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 79
+Warning (332174): Ignored filter at TimeConstraint.sdc(80): altera_reserved_tms could not be matched with a port File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 80
+Warning (332049): Ignored set_input_delay at TimeConstraint.sdc(80): Argument <targets> is an empty collection File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 80
+    Info (332050): set_input_delay -add_delay -max -clock [get_clocks {main_clk_50}]  3.000 [get_ports {altera_reserved_tms}] File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 80
+Warning (332049): Ignored set_input_delay at TimeConstraint.sdc(81): Argument <targets> is an empty collection File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 81
+    Info (332050): set_input_delay -add_delay -min -clock [get_clocks {main_clk_50}]  2.000 [get_ports {altera_reserved_tms}] File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 81
+Warning (332174): Ignored filter at TimeConstraint.sdc(89): LEDG[0] could not be matched with a port File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 89
+Warning (332049): Ignored set_output_delay at TimeConstraint.sdc(89): Argument <targets> is an empty collection File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 89
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {main_clk_50}]  2.000 [get_ports {LEDG[0]}] File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 89
+Warning (332174): Ignored filter at TimeConstraint.sdc(90): LEDG[1] could not be matched with a port File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 90
+Warning (332049): Ignored set_output_delay at TimeConstraint.sdc(90): Argument <targets> is an empty collection File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 90
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {main_clk_50}]  2.000 [get_ports {LEDG[1]}] File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 90
+Warning (332174): Ignored filter at TimeConstraint.sdc(91): LEDG[2] could not be matched with a port File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 91
+Warning (332049): Ignored set_output_delay at TimeConstraint.sdc(91): Argument <targets> is an empty collection File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 91
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {main_clk_50}]  2.000 [get_ports {LEDG[2]}] File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 91
+Warning (332174): Ignored filter at TimeConstraint.sdc(92): LEDG[3] could not be matched with a port File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 92
+Warning (332049): Ignored set_output_delay at TimeConstraint.sdc(92): Argument <targets> is an empty collection File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 92
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {main_clk_50}]  2.000 [get_ports {LEDG[3]}] File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 92
+Warning (332174): Ignored filter at TimeConstraint.sdc(93): LEDG[4] could not be matched with a port File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 93
+Warning (332049): Ignored set_output_delay at TimeConstraint.sdc(93): Argument <targets> is an empty collection File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 93
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {main_clk_50}]  2.000 [get_ports {LEDG[4]}] File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 93
+Warning (332174): Ignored filter at TimeConstraint.sdc(94): LEDG[5] could not be matched with a port File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 94
+Warning (332049): Ignored set_output_delay at TimeConstraint.sdc(94): Argument <targets> is an empty collection File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 94
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {main_clk_50}]  2.000 [get_ports {LEDG[5]}] File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 94
+Warning (332174): Ignored filter at TimeConstraint.sdc(95): LEDG[6] could not be matched with a port File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 95
+Warning (332049): Ignored set_output_delay at TimeConstraint.sdc(95): Argument <targets> is an empty collection File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 95
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {main_clk_50}]  2.000 [get_ports {LEDG[6]}] File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 95
+Warning (332174): Ignored filter at TimeConstraint.sdc(96): LEDG[7] could not be matched with a port File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 96
+Warning (332049): Ignored set_output_delay at TimeConstraint.sdc(96): Argument <targets> is an empty collection File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 96
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {main_clk_50}]  2.000 [get_ports {LEDG[7]}] File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 96
+Warning (332174): Ignored filter at TimeConstraint.sdc(97): altera_reserved_tdo could not be matched with a port File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 97
+Warning (332049): Ignored set_output_delay at TimeConstraint.sdc(97): Argument <targets> is an empty collection File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 97
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {main_clk_50}]  2.000 [get_ports {altera_reserved_tdo}] File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 97
+Warning (332174): Ignored filter at TimeConstraint.sdc(106): HEX0[7] could not be matched with a port File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 106
+Warning (332049): Ignored set_output_delay at TimeConstraint.sdc(106): Argument <targets> is an empty collection File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 106
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {main_clk_50}]  2.000 [get_ports {HEX0[7]}] File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 106
+Warning (332174): Ignored filter at TimeConstraint.sdc(115): HEX1[7] could not be matched with a port File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 115
+Warning (332049): Ignored set_output_delay at TimeConstraint.sdc(115): Argument <targets> is an empty collection File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 115
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {main_clk_50}]  2.000 [get_ports {HEX1[7]}] File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 115
+Warning (332174): Ignored filter at TimeConstraint.sdc(122): altera_reserved_tck could not be matched with a clock File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 122
+Warning (332049): Ignored set_clock_groups at TimeConstraint.sdc(122): Argument -group with value [get_clocks {altera_reserved_tck}] contains zero elements File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 122
+    Info (332050): set_clock_groups -asynchronous -group [get_clocks {altera_reserved_tck}]  File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 122
+Warning (332049): Ignored set_clock_groups at TimeConstraint.sdc(123): Argument -group with value [get_clocks {altera_reserved_tck}] contains zero elements File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 123
+    Info (332050): set_clock_groups -asynchronous -group [get_clocks {altera_reserved_tck}]  File: C:/Users/Gkim9/Desktop/FinalProject/TimeConstraint.sdc Line: 123
+Warning (332060): Node: ControlUnit:MusicControlUnit|audio_interface:audioInterface_instance|i2c_counter[9] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register ControlUnit:MusicControlUnit|audio_interface:audioInterface_instance|word_count[3] is being clocked by ControlUnit:MusicControlUnit|audio_interface:audioInterface_instance|i2c_counter[9]
+Warning (332056): PLL cross checking found inconsistent PLL clock settings:
+    Warning (332056): Node: vga_clk_instance|altpll_component|auto_generated|pll1|clk[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
+Critical Warning (332168): The following clock transfers have no clock uncertainty assignment. For more accurate results, apply clock uncertainty assignments or use the derive_clock_uncertainty command.
+    Critical Warning (332169): From main_clk_50 (Rise) to main_clk_50 (Rise) (setup and hold)
+    Critical Warning (332169): From main_clk_50 (Fall) to main_clk_50 (Rise) (setup and hold)
+Info (223000): Starting Vectorless Power Activity Estimation
+Warning (222013): Relative toggle rates could not be calculated because no clock domain could be identified for some nodes
+Info (223001): Completed Vectorless Power Activity Estimation
+Info (218000): Using Advanced I/O Power to simulate I/O buffers with the specified board trace model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (215049): Average toggle rate for this design is 2.890 millions of transitions / sec
+Info (215031): Total thermal power estimate for the design is 347.94 mW
+Info: Quartus Prime Power Analyzer was successful. 0 errors, 43 warnings
+    Info: Peak virtual memory: 5229 megabytes
+    Info: Processing ended: Sat Dec 07 10:53:17 2019
+    Info: Elapsed time: 00:00:34
+    Info: Total CPU time (on all processors): 00:00:36
+
+

@@ -1,0 +1,12 @@
+Power Analyzer Status : Successful - Sat Dec 07 10:53:17 2019
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : MusicPlayer
+Top-level Entity Name : toplevel
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Power Models : Final
+Total Thermal Power Dissipation : 347.94 mW
+Core Dynamic Thermal Power Dissipation : 123.63 mW
+Core Static Thermal Power Dissipation : 105.54 mW
+I/O Thermal Power Dissipation : 118.78 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data

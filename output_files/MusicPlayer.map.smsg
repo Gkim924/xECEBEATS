@@ -1,0 +1,8 @@
+Warning (10268): Verilog HDL information at TopLevel.sv(50): always construct contains both blocking and non-blocking assignments File: C:/Users/Gkim9/Desktop/FinalProject/TopLevel.sv Line: 50
+Info (10281): Verilog HDL Declaration information at TopLevel.sv(6): object "HEX0" differs only in case from object "hex0" in the same scope File: C:/Users/Gkim9/Desktop/FinalProject/TopLevel.sv Line: 6
+Info (10281): Verilog HDL Declaration information at TopLevel.sv(6): object "HEX1" differs only in case from object "hex1" in the same scope File: C:/Users/Gkim9/Desktop/FinalProject/TopLevel.sv Line: 6
+Info (10281): Verilog HDL Declaration information at TopLevel.sv(6): object "HEX2" differs only in case from object "hex2" in the same scope File: C:/Users/Gkim9/Desktop/FinalProject/TopLevel.sv Line: 6
+Info (10281): Verilog HDL Declaration information at TopLevel.sv(6): object "HEX3" differs only in case from object "hex3" in the same scope File: C:/Users/Gkim9/Desktop/FinalProject/TopLevel.sv Line: 6
+Info (10281): Verilog HDL Declaration information at TopLevel.sv(6): object "HEX4" differs only in case from object "hex4" in the same scope File: C:/Users/Gkim9/Desktop/FinalProject/TopLevel.sv Line: 6
+Info (10281): Verilog HDL Declaration information at TopLevel.sv(6): object "HEX5" differs only in case from object "hex5" in the same scope File: C:/Users/Gkim9/Desktop/FinalProject/TopLevel.sv Line: 6
+Info (10281): Verilog HDL Declaration information at ControlUnit.sv(13): object "PAUSE" differs only in case from object "Pause" in the same scope File: C:/Users/Gkim9/Desktop/FinalProject/ControlUnit.sv Line: 13

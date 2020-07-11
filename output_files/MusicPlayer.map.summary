@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Dec 07 10:47:55 2019
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : MusicPlayer
+Top-level Entity Name : toplevel
+Family : Cyclone IV E
+Total logic elements : 41,058
+    Total combinational functions : 40,966
+    Dedicated logic registers : 353
+Total registers : 353
+Total pins : 152
+Total virtual pins : 0
+Total memory bits : 60,000
+Embedded Multiplier 9-bit elements : 2
+Total PLLs : 1
